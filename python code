@@ -1,0 +1,15 @@
+echo "# Major1-Cipher-school-python-InFyTQ" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ritika2800/Major1-Cipher-school-python-InFyTQ.git
+git push -u origin main
+def twoSum(self, nums, target):
+        seen = {}
+        for i, v in enumerate(nums):
+            remaining = target - v
+            if remaining in seen:
+                return [seen[remaining], i]
+            seen[v] = i
+        return []
